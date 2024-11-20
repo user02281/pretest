@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* border:skyblue 1px solid; */
+}
+
+body {
+    width:100%;
+    height: max-content;
+    background-color: #FBFBFB;
+    color: #151515;
+}
+#marqueeList {
+    transition: all 1s ease;    
+    animation: scrollMarquee 5000s linear infinite;
+    will-change: transform;
+}
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(-60%); /* Mulai dari tengah */
+  }
+  100% {
+    transform: translateX(-100%); /* Bergerak keluar dari layar kiri */
+  }
+}
+
